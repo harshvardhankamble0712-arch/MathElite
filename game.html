@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Basic Level</h2>
+    <p id="q">33 + 42 = ?</p>
+    <input type="number" id="ans">
+    <button onclick="check()">Submit</button>
+    <script>
+        function check() {
+            let a = document.getElementById('ans').value;
+            if(a == "75") alert("बरोबर!");
+            else alert("चुकीचे!");
+        }
+    </script>
+</body>
+</html>
