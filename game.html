@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>MathElite - Play</title>
+    <style>
+        .game-box { margin-top: 50px; text-align: center; }
+        .question { font-size: 40px; margin-bottom: 20px; }
+        .answer-input { padding: 15px; font-size: 20px; width: 80%; border-radius: 10px; border: 1px solid #333; background: #1a1a1a; color: white; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <div class="game-box">
+        <div class="question" id="q">0 + 0</div>
+        <input type="number" class="answer-input" id="ans" placeholder="Answer..." onkeyup="check(event)">
+    </div>
+
+    <div class="footer-branding">HK PRODUCTION • QUIET LUXURY EDITION</div>
+
+    <script>
+        // इथे आपण गणिताचे लॉजिक लावणार आहोत
+        let num1 = Math.floor(Math.random() * 10);
+        let num2 = Math.floor(Math.random() * 10);
+        document.getElementById('q').innerText = num1 + " + " + num2;
+
+        function check(e) {
+            if (e.key === "Enter") {
+                alert("चेक करत आहे...");
+            }
+        }
+    </script>
+</body>
+</html>
