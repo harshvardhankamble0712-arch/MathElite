@@ -1,0 +1,11 @@
+/* Footer Branding - Quiet Luxury Signature */
+.footer-branding {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
