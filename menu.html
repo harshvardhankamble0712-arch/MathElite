@@ -3,34 +3,19 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <title>MathElite - Menu</title>
-    <style>
-        .menu-container { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; width: 90%; max-width: 400px; margin-top: 50px; }
-        .btn { padding: 30px; background: #1a1a1a; border: 1px solid #333; color: #fff; border-radius: 12px; font-size: 24px; cursor: pointer; transition: 0.3s; }
-        .btn:hover { background: #333; }
-        .full { grid-column: span 2; }
-        h2 { letter-spacing: 5px; font-weight: 300; margin-bottom: 30px; }
-    </style>
 </head>
 <body>
-
     <h2>MATH ELITE</h2>
-
     <div class="menu-container">
         <button class="btn" onclick="openMode('+')">+</button>
         <button class="btn" onclick="openMode('-')">-</button>
         <button class="btn" onclick="openMode('×')">×</button>
         <button class="btn" onclick="openMode('÷')">÷</button>
-        <button class="btn full" onclick="openParents()">PARENTS</button>
     </div>
-
-    <div class="footer-branding">HK PRODUCTION • QUIET LUXURY EDITION</div>
 
     <script>
         function openMode(type) {
-            alert("Level: " + type + " Selected");
-        }
-        function openParents() {
-            alert("Parental Access Authorized");
+            window.location.href = "game.html";
         }
     </script>
 </body>
